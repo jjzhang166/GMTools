@@ -1,0 +1,6 @@
+addmoney,类型,数量,添加金钱or钻石
+setlevel,等级,设置等级
+addprop,id,数量,增加物品
+skipguide,跳过新手引导
+winstage,关卡ID,星星数量,通关主线关卡
+addexp,经验数量,添加经验
