@@ -41,7 +41,7 @@ int NetWork::initSock()
 // 参    数: const char * ip ip地址
 // 参    数: const int port 端口号
 //************************************
-int NetWork::connectSock(const char*ip, const int port)
+int NetWork::connectSock(const char*ip, const unsigned short port)
 {
 	struct sockaddr_in addr;
 	memset(&addr,0,sizeof(addr));

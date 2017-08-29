@@ -17,7 +17,7 @@ public:
 		return sNetWorkManager;
 	}
 	int initNetWork();								// 初始化网络
-	int connectSock(const char *ip, const int port, QString pUid);	// 连接到服务器
+	int connectSock(const char *ip, const unsigned short port, QString pUid);	// 连接到服务器
 	void initNetThread();							// 初始化监听线程
 	int Send(const char *cmd);						// 发送消息
 	int SendToUid(QString pCmd);					// 通过uid来发送消息

@@ -42,7 +42,7 @@ void NetWorkManager::initNetThread()
 // 参    数: const int port
 // 参    数: QString pUid 用户uid
 //************************************
-int NetWorkManager::connectSock(const char*ip, const int port, QString pUid)
+int NetWorkManager::connectSock(const char*ip, const unsigned short port, QString pUid)
 {
 	this->uid = QString("u").append(pUid);
 	qDebug("connect Sock ip:%s , port:%d , uid:%s",ip,port,pUid);

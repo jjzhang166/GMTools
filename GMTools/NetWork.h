@@ -9,7 +9,7 @@ public:
 	NetWork(void);
 	~NetWork(void);
 
-	int connectSock(const char*ip, const int port); // 链接到服务器
+	int connectSock(const char*ip, const unsigned short port); // 链接到服务器
 	void initRecvThread(); // 启动线程函数
 	int sendMsg(QString str); // 发送消息
 	inline int getFd(){return this->fd;} //获取句柄

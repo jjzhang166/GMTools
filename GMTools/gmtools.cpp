@@ -137,7 +137,7 @@ void GMTools::ClickByTopConnect()
 	char* ip = (char*)malloc(sizeof( ui.lineEdit_ip->text().toStdString().c_str()));
 	strcpy(ip, ui.lineEdit_ip->text().toStdString().c_str());
 	QString uid = ui.lineEdit_uid->text().toStdString().c_str();
-	const int port	= ui.lineEdit_port->text().toInt();
+	const unsigned short port	= ui.lineEdit_port->text().toShort();
 	if (uid.isEmpty())
 	{
 		this->updateMsg("UID²»ÄÜÎª¿Õ£¡");

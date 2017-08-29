@@ -13,12 +13,14 @@
 
 int main(int argc, char *argv[])
 {
+#ifdef _WIN32
 	WSADATA wsaData;
 	if (WSAStartup(MAKEWORD(2,2), &wsaData) != 0)
 	{  
 		//qDebug("WSAStartup");
 		return -1;
 	}
+#endif
 
 	QApplication a(argc, argv);
 	// 先读取数据
